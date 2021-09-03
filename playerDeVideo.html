@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de video</title>
+    <link rel="stylesheet" href="_css/stilo.css">
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Manipulando controle de video com javascript</h1><br>
+    <p>Escolha o tamanho ideal para seu dispositivo:</p>
+
+    <input type="button" class="botao" value="Pequeno" onclick="changeSize(240,135)">
+    &nbsp;
+    <input type="button" class="botao" value="Médio" onclick="changeSize(480,270)">
+    &nbsp;
+    <input type="button" class="botao" value="Maior" onclick="changeSize(720,405)">
+    &nbsp;
+    <input type="button" class="botao" value="Tela cheia" onclick="telaCheia()">
+    <br><br>
+
+    <video id="playerPersonalizado" poster="_imagens/poster.png" width="480" height="270" controls>
+        <source src="_media/surf.mp4" type="video/mp4">
+        <source src="_media/surf.mp4" type="video/ogg">
+        O seu dispositivo não é suportado
+    </video><br>
+    <div>
+        <button class="botao" id="play_pause" onclick="play_pause()">PLAY</button>
+        <button class="botao" onclick="aumentarVolume()">VOLUME+</button>
+        <button class="botao" onclick="diminuirVolume()">VOLUME-</button>
+        <button class="botao" id="vidmute" onclick="vidmute()">MUTE</button>
+    </div>
+    <br><br><br>
+    <hr>
+
+    <script src="_javascript/player.js"></script>
+</body>
+
+</html>
