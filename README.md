@@ -1,2 +1,2 @@
-# Player_video_js
+# PlayerDeVideo.js
 Player de vídeo controlado por JavaScript
